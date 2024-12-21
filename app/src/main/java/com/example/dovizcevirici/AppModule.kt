@@ -1,4 +1,4 @@
-package com.example.dovizcevirici.di
+package com.example.dovizcevirici
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp
