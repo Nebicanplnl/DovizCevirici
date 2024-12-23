@@ -9,23 +9,5 @@
         android:id="@+id/goldFragment"
         android:name="com.example.dovizcevirici.presentation.ui.gold.GoldFragment"
         android:label="fragment_gold"
-        tools:layout="@layout/fragment_gold" >
-        <action
-            android:id="@+id/action_goldFragment_to_converterFragment"
-            app:destination="@id/converterFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/converterFragment"
-        android:name="com.example.dovizcevirici.presentation.ui.converter.ConverterFragment"
-        android:label="fragment_converter"
-        tools:layout="@layout/fragment_converter" >
-        <action
-            android:id="@+id/action_converterFragment_to_currencyFragment"
-            app:destination="@id/currencyFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/currencyFragment"
-        android:name="com.example.dovizcevirici.presentation.ui.currency.CurrencyFragment"
-        android:label="fragment_currency"
-        tools:layout="@layout/fragment_currency" />
+        tools:layout="@layout/fragment_gold" />
 </navigation>

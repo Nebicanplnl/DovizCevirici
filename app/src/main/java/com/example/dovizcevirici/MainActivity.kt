@@ -10,10 +10,14 @@ import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
 import com.example.dovizcevirici.databinding.ActivityMainBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
+
     private lateinit var binding: ActivityMainBinding
     private lateinit var navHostFragment: NavHostFragment
+    private lateinit var navController: NavController
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,8 +26,15 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
 
-        navHostFragment = supportFragmentManager.findFragmentById(R.id.navhHostFragment) as NavHostFragment
-        binding.bottomNav.setupWithNavController(navHostFragment.navController)
+       // navHostFragment = supportFragmentManager.findFragmentById(R.id.navHostFragment) as NavHostFragment
+      //  binding.bottomNav.setupWithNavController(navHostFragment.navController)
 
+        setupNavigationComponents()
+    }
+
+    private fun setupNavigationComponents() {
+        navHostFragment =
+            supportFragmentManager.findFragmentById(R.id.fragmentContainerView) as NavHostFragment
+        navController = navHostFragment.navController
     }
 }
