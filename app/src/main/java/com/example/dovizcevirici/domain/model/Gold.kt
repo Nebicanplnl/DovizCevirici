@@ -1,3 +1,9 @@
 package com.example.dovizcevirici.domain.model
 
-data class Gold(val buy: String, val name: String, val sell: String)
+import com.google.gson.annotations.SerializedName
+
+data class Gold(
+    @SerializedName("buy") val buy: String,
+    @SerializedName("name")val name: String,
+    @SerializedName("sell")val sell: String
+)

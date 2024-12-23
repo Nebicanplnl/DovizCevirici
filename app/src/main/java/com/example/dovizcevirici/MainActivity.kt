@@ -25,16 +25,16 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
-       // navHostFragment = supportFragmentManager.findFragmentById(R.id.navHostFragment) as NavHostFragment
-      //  binding.bottomNav.setupWithNavController(navHostFragment.navController)
-
         setupNavigationComponents()
+
     }
 
     private fun setupNavigationComponents() {
         navHostFragment =
-            supportFragmentManager.findFragmentById(R.id.fragmentContainerView) as NavHostFragment
+            supportFragmentManager.findFragmentById(R.id.navhHostFragment) as NavHostFragment
         navController = navHostFragment.navController
+        binding.bottomNav.setupWithNavController(navController)
+
+
     }
 }

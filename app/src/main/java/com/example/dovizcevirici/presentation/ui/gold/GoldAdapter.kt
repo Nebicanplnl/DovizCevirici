@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.dovizcevirici.data.model.Result
 import com.example.dovizcevirici.databinding.ItemListDashboardBinding
 
-class GoldAdapter(val goldList: List<Result> = emptyList()): RecyclerView.Adapter<GoldAdapter.GoldViewHolder>(){
+class GoldAdapter(private val goldList: List<Result> = emptyList()): RecyclerView.Adapter<GoldAdapter.GoldViewHolder>(){
 
     class GoldViewHolder(private val binding: ItemListDashboardBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(gold: Result) {

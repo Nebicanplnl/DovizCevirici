@@ -1,8 +1,6 @@
 package com.example.dovizcevirici.domain.usecase.gold
 
 import com.example.dovizcevirici.data.model.GoldDto
-import com.example.dovizcevirici.data.model.toGold
-import com.example.dovizcevirici.domain.model.Gold
 import com.example.dovizcevirici.domain.repository.GoldRepository
 import com.example.dovizcevirici.utils.Resources
 import kotlinx.coroutines.flow.Flow
