@@ -1,10 +1,11 @@
 package com.example.dovizcevirici.data.model
 
+import com.google.gson.annotations.SerializedName
 
 
 data class Result(
-    val buy: String,
-    val name: String,
-    val sell: String
+   @SerializedName("buying") val buy: String,
+   @SerializedName("name")val name: String,
+   @SerializedName("selling") val sell: String
 )
 
