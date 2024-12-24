@@ -3,6 +3,7 @@ package com.example.dovizcevirici.presentation.ui.currency
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.dovizcevirici.common.formatAsTwoDecimal
 import com.example.dovizcevirici.data.model.Result
 import com.example.dovizcevirici.databinding.ItemListDashboardBinding
 
@@ -11,8 +12,8 @@ class CurrencyAdapter(private val goldList: List<Result> = emptyList()): Recycle
     class GoldViewHolder(private val binding: ItemListDashboardBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(gold: Result) {
             binding.goldName.text = gold.name
-            binding.goldBuying.text = gold.buy
-            binding.goldSelling.text = gold.sell
+            binding.goldBuying.text = gold.buy.formatAsTwoDecimal()
+            binding.goldSelling.text = gold.sell.formatAsTwoDecimal()
         }
     }
 
