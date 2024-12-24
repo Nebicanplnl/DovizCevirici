@@ -1,10 +1,10 @@
 package com.example.dovizcevirici.presentation.ui.gold
 
 import android.os.Bundle
+import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
@@ -25,7 +25,7 @@ class GoldFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?,
+        savedInstanceState: Bundle?
     ): View? {
         return inflater.inflate(R.layout.fragment_gold, container, false)
     }
@@ -55,10 +55,9 @@ class GoldFragment : Fragment() {
             }
         }
     }
-
     inline fun Fragment.launchRepeatWithViewLifecycle(
         minActiveState: Lifecycle.State = Lifecycle.State.STARTED,
-        crossinline block: suspend CoroutineScope.() -> Unit,
+        crossinline block: suspend CoroutineScope.() -> Unit
     ) {
         viewLifecycleOwner.lifecycleScope.launch {
             viewLifecycleOwner.lifecycle.repeatOnLifecycle(minActiveState) {
