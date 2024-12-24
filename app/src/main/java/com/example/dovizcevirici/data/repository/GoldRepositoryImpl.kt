@@ -12,4 +12,9 @@ class GoldRepositoryImpl @Inject constructor(private val goldAPI : GoldAPI): Gol
     override suspend fun getGold(): GoldDto {
     return goldAPI.getGold()
     }
+
+    override suspend fun getCurrency(): GoldDto {
+       return goldAPI.getAllCurrency()
+    }
 }
+
