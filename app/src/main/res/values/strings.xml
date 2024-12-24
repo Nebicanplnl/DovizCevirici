@@ -5,4 +5,7 @@
     <string name="gold">Gold</string>
     <string name="currency">Currency</string>
     <string name="converter">Converter</string>
+    <string name="has_alt_n">Has Altın</string>
+    <string name="_3020">3020</string>
+    <string name="_3084">3084</string>
 </resources>
