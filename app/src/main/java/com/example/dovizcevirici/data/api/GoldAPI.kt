@@ -20,4 +20,10 @@ interface GoldAPI {
         @Header("content-type") type: String = CONTENT_TYPE,
         @Header("authorization") apiKey: String = API_KEY
     ): GoldDto
+
+    @GET("economy/exchange")
+    suspend fun getAllConverter(
+        @Header("content-type") type: String = CONTENT_TYPE,
+        @Header("authorization") apiKey: String = API_KEY
+    ): GoldDto
 }
