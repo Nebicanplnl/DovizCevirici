@@ -10,11 +10,8 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import com.example.dovizcevirici.R
-import com.example.dovizcevirici.common.viewBinding
+import com.example.dovizcevirici.common.ext.viewBinding
 import com.example.dovizcevirici.databinding.FragmentCurrencyBinding
-import com.example.dovizcevirici.databinding.FragmentGoldBinding
-import com.example.dovizcevirici.presentation.ui.gold.GoldAdapter
-import com.example.dovizcevirici.presentation.ui.gold.GoldViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
