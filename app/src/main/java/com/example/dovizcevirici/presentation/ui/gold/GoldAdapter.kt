@@ -3,7 +3,7 @@ package com.example.dovizcevirici.presentation.ui.gold
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.dovizcevirici.common.formatAsTwoDecimal
+import com.example.dovizcevirici.common.ext.formatAsTwoDecimal
 import com.example.dovizcevirici.data.model.Result
 import com.example.dovizcevirici.databinding.ItemListDashboardBinding
 

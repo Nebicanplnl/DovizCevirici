@@ -8,6 +8,7 @@ import com.example.dovizcevirici.domain.model.Gold
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Header
+import retrofit2.http.Query
 
 interface GoldAPI {
     @GET("economy/goldPrice")
@@ -22,9 +23,12 @@ interface GoldAPI {
         @Header("authorization") apiKey: String = API_KEY
     ): GoldDto
 
-    @GET("economy/exchange")
+    @GET("economy/exchange")// ?int=10&to=EUR&base=USD
     suspend fun getAllConverter(
         @Header("content-type") type: String = CONTENT_TYPE,
-        @Header("authorization") apiKey: String = API_KEY
+        @Header("authorization") apiKey: String = API_KEY,
+        @Query("int") int: Int,
+        @Query("to") to: String,
+        @Query("base") base: String,
     ): ConverterDto
 }
