@@ -18,8 +18,8 @@ class GoldRepositoryImpl @Inject constructor(private val goldAPI : GoldAPI ): Go
        return goldAPI.getAllCurrency()
     }
 
-    override suspend fun getAllConverter(): ConverterDto {
-        return goldAPI.getAllConverter()
+    override suspend fun getAllConverter(base: String, to: String, int: Int): ConverterDto {
+        return goldAPI.getAllConverter(base = base, to = to, int = int)
     }
 }
 

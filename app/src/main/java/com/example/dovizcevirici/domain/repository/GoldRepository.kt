@@ -8,5 +8,5 @@ import retrofit2.Response
 interface GoldRepository {
     suspend fun getGold(): GoldDto
     suspend fun getCurrency(): GoldDto
-    suspend fun getAllConverter(): ConverterDto
+    suspend fun getAllConverter(base: String, to: String, int: Int): ConverterDto
 }

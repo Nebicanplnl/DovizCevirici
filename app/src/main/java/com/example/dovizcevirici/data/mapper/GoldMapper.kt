@@ -10,7 +10,8 @@ class GoldMapper {
             Gold(
                 buy = it.buy,
                 name = it.name,
-                sell = it.sell
+                sell = it.sell,
+                code = it.code
             )
         }
     }

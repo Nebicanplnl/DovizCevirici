@@ -10,7 +10,7 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import com.example.dovizcevirici.R
-import com.example.dovizcevirici.common.viewBinding
+import com.example.dovizcevirici.common.ext.viewBinding
 import com.example.dovizcevirici.databinding.FragmentGoldBinding
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.CoroutineScope
@@ -38,14 +38,6 @@ class GoldFragment : Fragment() {
         goldAdapter = GoldAdapter(emptyList())
         binding.recyclerView.adapter = goldAdapter
 
-
-        // ViewModel'den verileri gözlemle
-//        goldViewModel.uiState.observe(viewLifecycleOwner) { state ->
-//            if (state.gold.isNotEmpty()) {
-//                goldAdapter = GoldAdapter(state.gold)
-//                recyclerView.adapter = goldAdapter
-//            }
-//        }
         launchRepeatWithViewLifecycle {
             goldViewModel.uiState.collect {
                 if (it.gold.result.isNotEmpty()) {
