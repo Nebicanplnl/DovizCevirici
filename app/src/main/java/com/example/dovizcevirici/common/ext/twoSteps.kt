@@ -1,4 +1,4 @@
-package com.example.dovizcevirici.common
+package com.example.dovizcevirici.common.ext
 
 fun String.formatAsTwoDecimal(): String {
     return try {

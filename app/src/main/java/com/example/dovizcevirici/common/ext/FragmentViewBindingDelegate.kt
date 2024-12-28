@@ -1,4 +1,4 @@
-package com.example.dovizcevirici.common
+package com.example.dovizcevirici.common.ext
 
 import android.annotation.SuppressLint
 import android.view.View
