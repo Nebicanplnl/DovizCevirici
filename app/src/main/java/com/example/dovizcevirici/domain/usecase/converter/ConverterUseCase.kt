@@ -11,10 +11,11 @@ import java.io.IOException
 import javax.inject.Inject
 
 class ConverterUseCase@Inject constructor(private val repository: GoldRepository)  {
-    fun getGold():Flow<Resources<ConverterDto>> = flow {
+
+    fun getConverter(base: String,to: String, int: Int):Flow<Resources<ConverterDto>> = flow {
         try {
             emit(Resources.Loading())
-            val gold = repository.getAllConverter()
+            val gold = repository.getAllConverter(base = base , to = to , int = int)
             if (gold.success){
                 emit(Resources.Success(gold))
             }else{
