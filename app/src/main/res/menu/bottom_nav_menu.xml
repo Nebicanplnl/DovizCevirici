@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:id="@+id/goldFragment" android:title="@string/gold" android:icon="@drawable/gold"/>
-    <item android:id="@+id/currencyFragment" android:title="@string/currency" android:icon="@drawable/currency"/>
-    <item android:id="@+id/converterFragment" android:title="@string/converter" android:icon="@drawable/converter"/>
+    <item android:id="@+id/goldFragment" android:title="Altın" android:icon="@drawable/gold"/>
+    <item android:id="@+id/currencyFragment" android:title="Döviz" android:icon="@drawable/currency"/>
+    <item android:id="@+id/converterFragment" android:title="Çevirici" android:icon="@drawable/converter"/>
 </menu>
