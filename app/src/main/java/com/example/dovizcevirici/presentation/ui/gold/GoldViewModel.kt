@@ -21,12 +21,12 @@ class GoldViewModel @Inject constructor(private val goldUseCase: GoldUseCase): V
     val uiState: StateFlow<GoldState> = _uiState.asStateFlow()
 
     init {
-        getCrypto()
+        getGolds()
     }
 
     private var job: Job? = null
 
-    private fun getCrypto() {
+    private fun getGolds() {
         job?.cancel()
         job = goldUseCase.getGold().onEach {
             when(it) {
