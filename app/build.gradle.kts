@@ -77,4 +77,8 @@ dependencies {
 
     //Material
     implementation (libs.material.v160)
+
+    implementation (libs.lottie)
+
+    implementation (libs.androidx.core.splashscreen)
 }
