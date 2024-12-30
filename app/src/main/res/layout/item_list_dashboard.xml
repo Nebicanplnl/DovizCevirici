@@ -36,11 +36,11 @@
             android:text="@string/_3020"
             android:textStyle="bold"
             android:textSize="15sp"
-            app:layout_constraintStart_toEndOf="@id/goldName"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginEnd="18dp" />
+            android:layout_marginStart="32dp"/>
 
             <TextView
                 android:id="@+id/goldSelling"
@@ -52,6 +52,8 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintHorizontal_bias="0.99"
                 android:layout_marginEnd="4dp"/>
 
 
