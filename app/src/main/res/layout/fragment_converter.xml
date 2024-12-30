@@ -5,31 +5,35 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".presentation.ui.converter.ConverterFragment">
+    tools:context=".presentation.ui.converter.ConverterFragment"
+    android:background="@color/grey">
 
 
-    <LinearLayout
+    <androidx.cardview.widget.CardView
         android:id="@+id/linearlayout1"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:background="@color/gold"
-        android:orientation="vertical">
+        app:cardCornerRadius="12dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        >
 
         <TextView
             android:id="@+id/Çevirici"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Çevirici"
+            android:layout_gravity="center_horizontal"
+            android:text="Döviz Çevirici"
             android:textStyle="bold"
             android:textSize="30sp"
             android:layout_marginTop="24dp"
             android:textColor="@color/black"/>
 
-    </LinearLayout>
+    </androidx.cardview.widget.CardView>
 
 
     <androidx.cardview.widget.CardView
@@ -110,11 +114,8 @@
         app:layout_constraintTop_toBottomOf="@id/cardView2"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="80dp"
-        android:text="Clear"
+        android:text="Temizle"
         android:textSize="18sp"
         android:layout_marginStart="24dp"/>
-
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
