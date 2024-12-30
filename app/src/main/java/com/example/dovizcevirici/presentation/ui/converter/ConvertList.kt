@@ -31,7 +31,7 @@ object ConvertList {
         "SGD" to 26.5000,   // 1 SGD = 26.5000 TRY
         "MYR" to 7.4,       // 1 MYR = 7.4 TRY
         "IDR" to 0.0023,    // 1 IDR = 0.0023 TRY
-        "THB" to 1.0,       // 1 THB = 1.0 TRY (Thai Baht)
+        "THB" to 0.97,       // 1 THB = 1.3 TRY (Thai Baht)
         "VND" to 0.0014,    // 1 VND = 0.0014 TRY
         "PHP" to 0.62,      // 1 PHP = 0.62 TRY
         "NZD" to 21.60,     // 1 NZD = 21.60 TRY
