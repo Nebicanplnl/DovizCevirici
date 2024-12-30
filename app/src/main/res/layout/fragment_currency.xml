@@ -14,11 +14,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:text="Döviz"
+        android:text="Döviz Fiyatları"
         android:textStyle="bold"
         android:textSize="30sp"
         android:layout_marginTop="24dp"
-        android:textColor="@color/green2"/>
+        android:textColor="@color/gold"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -28,7 +28,7 @@
         app:layout_constraintTop_toBottomOf="@id/altin"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@id/altin"
-        android:layout_marginEnd="60dp"
+        android:layout_marginEnd="30dp"
         android:layout_marginTop="24dp"/>
 
     <TextView
@@ -52,7 +52,7 @@
         android:text="Satış"
         android:textColor="@color/white"
         android:layout_marginTop="24dp"
-        android:layout_marginStart="62dp"/>
+        android:layout_marginStart="50dp"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView2"
