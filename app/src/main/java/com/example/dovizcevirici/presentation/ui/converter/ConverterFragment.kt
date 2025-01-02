@@ -85,7 +85,6 @@ class ConverterFragment : Fragment() {
                 // Seçilen öğe ile ilgili işlemler burada yapılabilir
                 val selectedItem = parent.getItemAtPosition(position).toString()
 
-                // Örneğin, seçilen öğeyi loglayabiliriz
                 Log.d("Spinner", "Seçilen öğe: $selectedItem")
 
                 viewModel.base = selectedItem
@@ -93,7 +92,6 @@ class ConverterFragment : Fragment() {
             }
 
             override fun onNothingSelected(parent: AdapterView<*>) {
-                // Hiçbir şey seçilmediğinde yapılacak işlemler
                 Log.d("Spinner", "Hiçbir öğe seçilmedi")
             }
         }
