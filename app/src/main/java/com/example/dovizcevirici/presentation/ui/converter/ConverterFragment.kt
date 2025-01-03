@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Toast
-import androidx.core.widget.addTextChangedListener
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Lifecycle
@@ -123,12 +122,10 @@ class ConverterFragment : Fragment() {
             binding.textTo.text = ""
         }
 
-        // Çevir butonuna tıklanırsa EditText'teki veriyi TextView'e yazdır
         binding.converterButton.setOnClickListener {
             val fromCurrency = binding.spinnerFrom.selectedItem.toString()
             val amountString = binding.editTextFrom.text.toString()
 
-            // EditText'in boş olmadığını kontrol et
             if (amountString.isNotEmpty()) {
                 val amount = amountString.toDoubleOrNull() // Miktarı Double'a çevir
 
